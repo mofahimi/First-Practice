@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Debug Tests",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${workspaceFolder}/build/Tests.exe",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "preLaunchTask": "Build and Run Tests",
+          "miDebuggerPath": "path_to_your_debugger",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for gdb",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ],
+          "logging": {
+              "moduleLoad": false,
+              "programOutput": true,
+              "engineLogging": false
+          }
+      }
+  ]
+}
